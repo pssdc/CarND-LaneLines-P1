@@ -6,12 +6,6 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
----
-
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
@@ -39,14 +33,11 @@ The goals / steps of this project are the following:
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+1. The video output still shows some jitter. 
+2. The pipeline and the area of interest may work in a very specific conditions - good sunlight, very small curvature on the road and good visibility. 
+2. The pipeline doesn't work on the challange video.
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+1. Currently only 2 frames are used to reduce the jitter in the video, potentally more frames (and use their mean) can be used to smooth out the jitter in the video.
+2. For curved roads, multiple region of interest can be created and stacked on top of each other.
