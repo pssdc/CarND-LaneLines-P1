@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 10.  Slopes < -0.5 captured Left lanes lines. 
 11.  Slopes > 0.5 & <0.9 captured Right lane lines.
 12.  Middle points ( (x1+x2)/2, (y1+y2)/2) of the individual lines identified in Hough transform are used for to come up with the initial line equation (line AB in the figure) . This line is extrapolated to come up with the final drawn line (line A_ex B_ex in the figure). 
-![extrapolation](/Extrapolation.jpg)
+![extrapolation](/Extrapolation1.jpg)
 13. We have the equation of the top most (y=Ytop) and the bottom most (y=Ybot) line of the trapezoid.
 14. Calculated the coordinates of A_ex using the equation of line AB and y=Ytop.
 15. Calculated the coordinates of B_ex using the equation of line AB and y=Ybot.
